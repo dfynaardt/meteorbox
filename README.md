@@ -88,6 +88,7 @@ edit PROJECTNAME/packages/METEORUSER:PACKAGENAME/package.js
 
 Change package.onUse to:
 
+```javascript
     Package.onUse(function(api) {
       api.versionsFrom('METEOR@0.9.4'); // from undefined
       api.addFiles('PACKAGENAME:PACKAGENAME.js');
@@ -95,6 +96,7 @@ Change package.onUse to:
          api.export("PACKAGENAME");
       }
     });
+```
     
 NOTE:!!! PACKAGENAME in this case should be upper case. Like user:mypackage should be Mypackage (for PACKAGENAME).
 
@@ -112,11 +114,13 @@ edit PROJECTNAME/packages/METEORUSER:PACKAGENAME/METEORUSER:PACKAGENAME.js
 
 and make a very minimal package:
 
+```javascript
 PACKAGENAME = {
    sayHello: function() {
       return "HELLO!"
    }
 };
+```
     
 NOTE:!!! PACKAGENAME in this case should be upper case. Like user:mypackage should be Mypackage (for PACKAGENAME).
 
@@ -128,16 +132,17 @@ edit PROJNAME/tests/mocha/server/sampleServerTest.js
 
 update it so that we include the following:
 
-
-    ....
-    describe("Server initialization", function(){
-      it("should have a Meteor version defined", function(){
-        chai.assert(Meteor.release);
-      });
-      it("should give us access to our new package file", function(){
-        chai.assert(PACKAGENAME.sayHello);
-      });
-    });
+```javascript
+....
+describe("Server initialization", function(){
+  it("should have a Meteor version defined", function(){
+    chai.assert(Meteor.release);
+  });
+  it("should give us access to our new package file", function(){
+    chai.assert(PACKAGENAME.sayHello);
+  });
+});
+```
 
 NOTE:!!! PACKAGENAME in this case should be upper case. Like user:mypackage should be Mypackage (for PACKAGENAME).
 
