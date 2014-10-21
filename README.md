@@ -40,9 +40,28 @@ Go to [meteor][meteor-home-link] and follow "Get Started Now!"
     $ curl https://install.meteor.com/ | sh
 
 ## <a name="git-installation">Install Git
-  
+
 Install git on your machine.
 
+## <a name="atom-installation">Install Atom
+
+Go to [atom][atom-home-link] and install the package on your mac.
+
+Setup a symlink so you can run it from the command line:
+
+    $ ln -s /Applications/Atom.app/Contents/MacOS/Atom /usr/local/bin/atom
+
+Remember to make sure that /usr/local/bin/atom is in your $PATH. You can edit ~/.bash_profile and add it as follows:
+
+    export PATH=/usr/local/git/bin:$PATH
+
+
+now, you an do things like
+
+
+    $ atom .
+
+to open and edit all files in a directory.
 
 # <a name="meteor-installation"></a>Creating a Meteor Project
 
@@ -54,7 +73,7 @@ Create a meteor project
 
     $ meteor create PROJNAME
     $ cd PROJNAME
-    
+
 Add mocha testing
 
     $ meteor add mike:mocha
@@ -62,7 +81,7 @@ Add mocha testing
 Create default example tests
 
     $ meteor
-    
+
 Open browser to http://localhost:3000 (or port meteor was run on)  
 
 Click on "Add mocha sample tests"
@@ -97,7 +116,7 @@ Change package.onUse to:
       }
     });
 ```
-    
+
 NOTE:!!! PACKAGENAME in this case should be upper case. Like user:mypackage should be Mypackage (for PACKAGENAME).
 
 WARNING: api.export("PACKAGENAME") is required or you can't test it.
@@ -121,7 +140,7 @@ PACKAGENAME = {
    }
 };
 ```
-    
+
 NOTE:!!! PACKAGENAME in this case should be upper case. Like user:mypackage should be Mypackage (for PACKAGENAME).
 
 ## Testing!!!!
@@ -149,7 +168,7 @@ NOTE:!!! PACKAGENAME in this case should be upper case. Like user:mypackage shou
 Run meteor if it isn't already running:
 
     $ meteor
-    
+
 go to http://localhost:3000/
 
 You should see a "should give us access to our new package file" pass.
@@ -161,17 +180,3 @@ Congrats! You you've built meteor package that is testable.
 ## Push To Git
 
 You know the drill.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
