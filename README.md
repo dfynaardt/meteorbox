@@ -154,7 +154,7 @@ go to http://localhost:3000/
 
 You should see a "should give us access to our new package file" pass.
 
-Note that you may need to edit the server file.
+Note that you may need to edit the server file to get the tests to re-run so you can see that message.
 
 Congrats! You you've built meteor package that is testable.
 
