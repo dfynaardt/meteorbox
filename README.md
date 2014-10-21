@@ -29,8 +29,6 @@ We are trying for a full javascript stack (editor and all).
 * [kimonolabs][kimonolabs-home-link] - Web scraping software.
 
 
-
-
 # <a name="development-setup"></a>Development Environment Setup
 
 ## <a name="meteor-installation"></a>Meteor Installation
@@ -59,7 +57,7 @@ Remember to make sure that /usr/local/bin/atom is in your $PATH. You can edit ~/
 now, you an do things like
 
 
-    $ atom .
+    $ atom
 
 to open and edit all files in a directory.
 
