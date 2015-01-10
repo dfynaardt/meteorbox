@@ -1,0 +1,11 @@
+<template name="Card2">
+	<p>
+		This is the post
+	</p>
+
+	{{> contentFor region = "aside" template = "Aside"}}
+
+	{{#contentFor "footer"}}
+		Content For Footer
+	{{/contentFor}}
+</template>

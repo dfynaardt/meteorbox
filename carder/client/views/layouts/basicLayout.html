@@ -1,0 +1,17 @@
+<template name="BasicLayout">
+  <header>
+    <h1>Title</h1>
+  </header>
+
+  <aside>
+    {{> yield "aside"}}
+  </aside>
+
+  <article>
+    {{> yield}}
+  </article>
+
+  <footer>
+    {{> yield "footer"}}
+  </footer>
+</template>

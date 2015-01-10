@@ -1,0 +1,21 @@
+<template name="NavigationLayout">
+	<nav>
+		<ul>
+			<li>
+				<a href="/">Home</a>
+			</li>
+
+			<li>
+				<a href="/one">Page One</a>
+			</li>
+
+			<li>
+				<a href="/two">Page Two</a>
+			</li>
+		</ul>
+	</nav>
+
+	<article>
+		{{> yield}}
+	</article>
+</template>
